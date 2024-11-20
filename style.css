@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Eater&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f5f5dc;
+}
+
+.menu {
+    width: 100%;
+    position: fixed;
+    color: #fff;
+}
+
+.menu .fa-bars {
+    background-color: #8000007a;
+    border-bottom-right-radius: 5px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.menu .menu-nav .inform-items{
+    padding: 5px;
+    height: 3em;
+    width: 100%;
+}
+
+.menu .menu-nav .inform-items li {
+    list-style-type: none;
+}
+
+.menu .menu-nav .inform-items li a {
+    border-radius: 10px;
+    color: #800000;
+    font-size: 0.9em;
+    padding: 3px 30px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;  
+}
+
+.menu .menu-nav .inform-items li a:hover {
+    background-color: #000000b5;
+    color: #fff;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    color: #800000;
+}
+
+#container .perfil-nome-profissao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+#container .perfil-nome-profissao .perfil {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+.section-redes-sociais {
+    width: 100%;
+    padding: 25px 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+   
+}
+
+.section-redes-sociais a {
+    text-decoration: none;
+    color: #800000;
+    transition: 0.2s ease-in-out;
+}
+
+.section-redes-sociais a:hover {
+    border-radius: 10px;
+    padding: 0px 3px;
+    background-color: #800000;
+    color: #faebd7;
+    text-decoration: underline;  
+}
+
+a .fa-brands {
+    scale: 1.4;
+    padding: 0 8px;
+}
+
+#container .section-endereco {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+#container .section-endereco p .fa-location-dot {
+    scale: 1.3;
+    
+    border-radius: 50%;
+    padding: 0px 0px 0px 10px;
+}
+
+#container .section-endereco p:first-child {
+    padding-left: 5px;
+}
+
+#container .section-endereco p:nth-child(even) {
+    padding-left: 30px;
+}
+
+#container .section-endereco p:last-child {
+    padding-left: 30px;
+}
+
+@media (max-width: 767px) {
+    .fa-bars {
+        background-color: #fff;
+    }
+
+    .menu .menu-nav .inform-items{
+        display: none;
+    }
+
+    .menu-mobile {
+        height: 100vh;
+        width: 50%;
+        border-radius: 0px 10px 0px 10px;
+        background-color: #0000008f;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 10px ;
+    }
+
+    .referencia {
+        color: #fff;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .referencia :hover {
+        text-decoration: underline;
+    }
+}
+
+
+@media (min-width: 767px){
+
+    .menu .menu-nav .fa-bars {
+        display: none;
+    }
+    .menu .menu-nav .inform-items {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+   
+    #container .perfil-nome-profissao {
+        margin: 0 4em;
+    }
+    #container .perfil-nome-profissao .perfil {
+        height: 300px;
+        width: 250px;
+        border-radius: 0.8em;
+    }
+
+    #container {
+        width: 100%;
+        text-align: start;
+    }
+
+}
+
+
+
+
+
+
+
